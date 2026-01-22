@@ -1,0 +1,16 @@
+@keyframes show-toast {
+  0% {bottom: -100%;}
+  10% {bottom: 100px;}
+  80% {bottom: 100px;}
+  100% {bottom: -100%;}
+  }
+
+.show-notfication {
+  position: fixed;
+  bottom: 100%;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  animation-name: show-toast;
+  animation-duration: 6s;
+}
