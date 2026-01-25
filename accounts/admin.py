@@ -18,4 +18,9 @@ class CustomUserAdmin(UserAdmin):
 
 
 admin.site.register(User, CustomUserAdmin)
-admin.site.register(UserProfile)
+
+
+@admin.register(UserProfile)
+class UserProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'addres_line_1', 'country', 'pin_code', )
+    list_display_links = ('user',)
